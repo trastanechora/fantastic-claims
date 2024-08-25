@@ -1,3 +1,7 @@
+import type { Address } from '../address/types';
+import type { Telecomunication } from '../telecomunication/types';
+import { IdentifierUse } from '../shared/types';
+
 /**
  * @description a set of codes that can be used to indicate a type of organization
  * @source https://terminology.hl7.org/6.0.2/CodeSystem-organization-type.html
@@ -17,40 +21,26 @@ export enum OrganizationType {
   Other = 'other',
 }
 
-interface Extension {
-  url: string;
-  valueCode: string;
-}
+/**
+ * @description a set of codes that can be used to identifies the purpose for this identifier, if known
+ * @source https://hl7.org/fhir/codesystem-identifier-use.html
+ */
+type OrganizationIdentifierUse = IdentifierUse;
 
-interface AddressExtension {
-  extensions: Extension[];
-  url: string;
-}
-
-interface Address {
-  city: string;
-  country: string;
-  line: string[];
-  postalCode: string;
-  type: string;
-  use: string;
-  extensions: AddressExtension[];
-}
-
-interface DynamicField {
+interface OrganizationIdentifier {
   system: string;
-  use: string;
+  use: OrganizationIdentifierUse;
   value: string;
 }
 
-interface DynamicCoding {
+interface TypeCodingItem {
   code: OrganizationType;
   display: string;
   system: string;
 }
 
 interface TypeCoding {
-  codings: DynamicCoding[];
+  codings: TypeCodingItem[];
 }
 
 interface Meta {
@@ -66,10 +56,10 @@ interface Relation {
 export interface Organization {
   id: string;
   name: string;
-  identifiers: DynamicField[];
+  identifiers: OrganizationIdentifier[];
   isActive: boolean;
   addresses: Address[];
-  telecomunications: DynamicField[];
+  telecomunications: Telecomunication[];
   types: TypeCoding[];
   meta: Meta;
   relations: Relation[];

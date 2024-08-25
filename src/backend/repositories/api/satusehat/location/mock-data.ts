@@ -1,3 +1,5 @@
+export const MOCK_LOCATION_ID = '65d70fff-27dd-40a1-b268-3cc8f1817426';
+
 export const BODY_OF_CREATE_LOCATION = {
   resourceType: 'Location',
   identifier: [

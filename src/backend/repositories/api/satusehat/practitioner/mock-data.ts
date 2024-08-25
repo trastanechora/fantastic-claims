@@ -1,4 +1,5 @@
-export const PRACTITIONER_ID = 'N10000001';
+export const MOCK_PRACTITIONER_ID = 'N10000001';
+export const MOCK_PRACTITIONER_NAME = 'Dokter Bronsig';
 
 export const RESPONSE_PRACTITIONER_BY_ID = {
   status: 200,

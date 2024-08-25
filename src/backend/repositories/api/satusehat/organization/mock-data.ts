@@ -1,3 +1,5 @@
+export const MOCK_ORGANIZATION_ID = process.env.SATU_SEHAT_ORGANIZATION_ID;
+
 export const RESPONSE_ORGANIZATION_BY_PARENT_ID = {
   status: 200,
   data: {

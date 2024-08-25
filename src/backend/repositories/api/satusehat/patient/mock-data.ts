@@ -1,5 +1,6 @@
 export const MOCK_PATIENT_ID = 'P02029544667';
 export const MOCK_PATIENT_KTP = '3314080101010001';
+export const MOCK_PATIENT_NAME = 'Maestro Trastanechora';
 
 export const PATIENT = {
   entry: [

@@ -1,5 +1,5 @@
-import { IdentifierUse } from '../use/types';
-import type { Telecomunication } from '../telecomunication/types';
+import { IdentifierUse } from './identifier-use';
+import type { Telecomunication } from './telecomunication';
 
 /**
  * @description a set of codes that can be used to indicate a type of gender used for administrative purposes

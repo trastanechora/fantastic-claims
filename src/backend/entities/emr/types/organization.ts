@@ -1,6 +1,6 @@
-import type { Address } from '../address/types';
-import type { Telecomunication } from '../telecomunication/types';
-import { IdentifierUse } from '../use/types';
+import type { Address } from './address';
+import type { Telecomunication } from './telecomunication';
+import { IdentifierUse } from './identifier-use';
 
 /**
  * @description a set of codes that can be used to indicate a type of organization

@@ -1,4 +1,4 @@
-import { OrganizationType } from './types';
+import { OrganizationType } from '../types/organization';
 
 export const getOrganizationCode = (code: string) => {
   switch (code) {

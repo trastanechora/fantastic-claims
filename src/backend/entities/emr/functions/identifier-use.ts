@@ -1,4 +1,4 @@
-import { IdentifierUse } from './types';
+import { IdentifierUse } from '../types/identifier-use';
 
 export const getIdentifierUse = (code: string) => {
   switch (code) {

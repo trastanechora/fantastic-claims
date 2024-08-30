@@ -1,4 +1,4 @@
-import { TelecomunicationSystem, TelecomunicationUse } from './types';
+import { TelecomunicationSystem, TelecomunicationUse } from '../types/telecomunication';
 
 export const getTelecomunicationSystem = (code: string) => {
   switch (code) {

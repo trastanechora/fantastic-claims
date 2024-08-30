@@ -1,4 +1,4 @@
-import type { Telecomunication } from '../telecomunication/types';
+import type { Telecomunication } from './telecomunication';
 
 /**
  * @description a set of codes that can be used to indicate a type of address

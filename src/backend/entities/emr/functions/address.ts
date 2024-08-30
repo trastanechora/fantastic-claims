@@ -1,4 +1,4 @@
-import { AddressType, AddressUse, AddressContactType } from './types';
+import { AddressType, AddressUse, AddressContactType } from '../types/address';
 
 export const getAddressType = (code: string) => {
   switch (code) {

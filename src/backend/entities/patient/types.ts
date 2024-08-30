@@ -1,4 +1,4 @@
-import { IdentifierUse } from '../shared/types';
+import { IdentifierUse } from '../use/types';
 import type { Telecomunication } from '../telecomunication/types';
 
 /**

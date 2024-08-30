@@ -1,5 +1,3 @@
-export const EXAMPLE_NAME = 'cough';
-
 export const RESPONSE_GET_TEMPLATE = {
   status: 200,
   data: {

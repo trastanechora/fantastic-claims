@@ -1,5 +1,4 @@
 import fetch from '@/backend/repositories/api/lib/fetch';
-import { EXAMPLE_NAME } from './mock-data';
 
 const URL = process.env.OPENAI_BASE_URL + '/v1/chat/completions';
 

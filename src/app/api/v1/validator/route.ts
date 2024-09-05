@@ -1,1 +1,1 @@
-export { GET } from '@/backend/deliveries/api/validator';
+export { POST } from '@/backend/deliveries/api/validator';

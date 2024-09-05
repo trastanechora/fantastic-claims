@@ -1,0 +1,50 @@
+[
+  {
+    "diagnosis": "Demam Dengue",
+    "icd10Coding": "A90",
+    "criterias": [
+      {
+        "validation": "Demam 2–7 hari yang timbul mendadak, tinggi, terus-menerus, bifasik."
+      },
+      {
+        "validation": "Adanya manifestasi perdarahan baik yang spontan seperti petekie, purpura, ekimosis, epistaksis, perdarahan gusi, hematemesis dan atau melena; maupun berupa uji tourniquet positif."
+      },
+      {
+        "validation": "Nyeri kepala, mialgia, artralgia, nyeri retroorbital."
+      },
+      {
+        "validation": "Adanya kasus DBD baik di lingkungan sekolah, rumah atau di sekitar rumah."
+      },
+      {
+        "validation": "Leukopenia <4.000/mm3"
+      },
+      {
+        "validation": "Trombositopenia <100.000/mm3"
+      }
+    ]
+  },
+  {
+    "diagnosis": "Demam Berdarah Dengue",
+    "icd10Coding": "A91",
+    "criterias": [
+      {
+        "validation": "Demam 2–7 hari yang timbul mendadak, tinggi, terus-menerus (kontinua)"
+      },
+      {
+        "validation": "Adanya manifestasi perdarahan baik yang spontan seperti petekie, purpura, ekimosis, epistaksis, perdarahan gusi, hematemesis dan atau melena; maupun berupa uji Tourniquette yang positif"
+      },
+      {
+        "validation": "Sakit kepala, mialgia, artralgia, nyeri retroorbital"
+      },
+      {
+        "validation": "Darah perifer lengkap, yang menunjukkan: Trombositopenia (≤ 100.000/μL). Kebocoran plasma yang ditandai dengan: Leukopenia < 4000/μL."
+      },
+      {
+        "validation": "Serologi Dengue, yaitu IgM dan IgG anti-Dengue, yang titernya dapat terdeteksi setelah hari ke-5 demam."
+      },
+      {
+        "validation": "Adanya kasus demam berdarah dengue baik di lingkungan sekolah, rumah atau di sekitar rumah. Hepatomegali. Adanya kebocoran plasma yang ditandai dengan salah satu: Peningkatan nilai hematokrit, >20% dari pemeriksaan awal atau dari data populasi menurut umur. Ditemukan adanya efusi pleura, asites. Hipoalbuminemia, hipoproteinemia. Trombositopenia <100.000/mm3"
+      }
+    ]
+  }
+]

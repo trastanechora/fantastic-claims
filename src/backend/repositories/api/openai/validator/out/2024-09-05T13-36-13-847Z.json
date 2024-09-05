@@ -1,0 +1,47 @@
+[
+  {
+    "diagnosis": "Demam Dengue",
+    "icd10Coding": "A90",
+    "criterias": [
+      {
+        "validation": "Demam tinggi, mendadak, terus menerus selama 2 – 7 hari."
+      },
+      {
+        "validation": "Manifestasi perdarahan, seperti: bintik-bintik merah di kulit, mimisan, gusi berdarah, muntah berdarah, atau buang air besar berdarah."
+      },
+      {
+        "validation": "Gejala nyeri kepala, mialgia, artralgia, nyeri retroorbital."
+      },
+      {
+        "validation": "Gejala gastrointestinal, seperti: mual, muntah, nyeri perut (biasanya di ulu hati atau di bawah tulang iga)"
+      },
+      {
+        "validation": "Kadang disertai juga dengan gejala lokal, seperti: nyeri menelan, batuk, pilek."
+      },
+      {
+        "validation": "Pada kondisi syok, anak merasa lemah, gelisah, atau mengalami penurunan kesadaran."
+      }
+    ]
+  },
+  {
+    "diagnosis": "Demam Berdarah Dengue",
+    "icd10Coding": "A91",
+    "criterias": [
+      {
+        "validation": "Demam tinggi, mendadak, terus menerus (kontinua)."
+      },
+      {
+        "validation": "Manifestasi perdarahan, seperti: petekie, purpura, ekimosis, epistaksis, perdarahan gusi, hematemesis."
+      },
+      {
+        "validation": "Sakit kepala, mialgia, artralgia, nyeri retroorbital."
+      },
+      {
+        "validation": "Darah perifer lengkap, trombositopenia (≤ 100.000/μL)."
+      },
+      {
+        "validation": "Kebocoran plasma yang ditandai dengan peningkatan nilai hematokrit, efusi pleura, asites, hipoalbuminemia, hipoproteinemia."
+      }
+    ]
+  }
+]

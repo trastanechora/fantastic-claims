@@ -1,0 +1,56 @@
+[
+  {
+    "diagnosis": "Demam Dengue",
+    "icd10Coding": "A90",
+    "criterias": [
+      {
+        "validation": "Demam tinggi, mendadak, terus menerus selama 2 – 7 hari"
+      },
+      {
+        "validation": "Manifestasi perdarahan seperti: bintik-bintik merah di kulit, mimisan, gusi berdarah, muntah berdarah, atau buang air besar berdarah"
+      },
+      {
+        "validation": "Gejala nyeri kepala, mialgia, artralgia, nyeri retroorbital"
+      },
+      {
+        "validation": "Gejala gastrointestinal seperti: mual, muntah, nyeri perut"
+      },
+      {
+        "validation": "Kadang disertai gejala lokal seperti: nyeri menelan, batuk, pilek"
+      },
+      {
+        "validation": "Pada kondisi syok, anak merasa lemah, gelisah, atau mengalami penurunan kesadaran"
+      },
+      {
+        "validation": "Pada bayi, demam yang tinggi dapat menimbulkan kejang"
+      },
+      {
+        "validation": "Penanda patognomonik: Suhu > 37,5 derajat celcius, ptekie, ekimosis, purpura, perdarahan mukosa, Rumple Leed (+)"
+      },
+      {
+        "validation": "Peningkatan hematokrit (Ht) ≥ 20% dari nilai standar data populasi menurut umur, ditemukan adanya efusi pleura, asites, hipoalbuminemia, hipoproteinemia"
+      }
+    ]
+  },
+  {
+    "diagnosis": "Demam Berdarah Dengue",
+    "icd10Coding": "A91",
+    "criterias": [
+      {
+        "validation": "Demam 2–7 hari yang timbul mendadak, tinggi, terus-menerus"
+      },
+      {
+        "validation": "Manifestasi perdarahan seperti: petekie, purpura, ekimosis, epistaksis, perdarahan gusi, hematemesis, melena, atau uji Tourniquette positif"
+      },
+      {
+        "validation": "Sakit kepala, mialgia, artralgia, nyeri retroorbital"
+      },
+      {
+        "validation": "Darah perifer lengkap menunjukkan trombositopenia (≤ 100.000/μL), leukopenia < 4000/μL"
+      },
+      {
+        "validation": "Serologi Dengue: IgM dan IgG anti-Dengue, kasus demam berdarah dengue di sekitar lingkungan pasien, hepatomegali, kebocoran plasma (peningkatan nilai hematokrit, efusi pleura, asites, hipoalbuminemia, hipoproteinemia), trombositopenia <100.000/mm3"
+      }
+    ]
+  }
+]

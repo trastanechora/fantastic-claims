@@ -1,5 +1,5 @@
 import fetch from '@/backend/repositories/api/lib/fetch';
-import getToken from '../authentication/get-token';
+import getToken from '../token/get-token';
 import { MOCK_PATIENT_KTP } from './mock-data';
 
 const URL =

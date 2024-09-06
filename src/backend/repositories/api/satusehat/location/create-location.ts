@@ -1,5 +1,5 @@
 import fetch from '@/backend/repositories/api/lib/fetch';
-import getToken from '../authentication/get-token';
+import getToken from '../token/get-token';
 import { BODY_OF_CREATE_LOCATION } from './mock-data';
 
 const URL = process.env.SATU_SEHAT_BASE_URL + '/Location';

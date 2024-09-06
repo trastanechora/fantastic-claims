@@ -203,3 +203,131 @@ export const RESPONSE_ENCOUNTER_BY_ID = {
   },
   error: null,
 };
+
+export const RESPONSE_EDIT_ENCOUNTER = {
+  class: {
+    code: 'AMB',
+    display: 'ambulatory',
+    system: 'http://terminology.hl7.org/CodeSystem/v3-ActCode',
+  },
+  diagnosis: [
+    {
+      condition: {
+        display: 'Tuberculosis of lung, confirmed by sputum microscopy with or without culture',
+        reference: 'Condition/be0d757c-62f5-4e15-8c08-1971d6eb21f7',
+      },
+      rank: 1,
+      use: {
+        coding: [
+          {
+            code: 'DD',
+            display: 'Discharge diagnosis',
+            system: 'http://terminology.hl7.org/CodeSystem/diagnosis-role',
+          },
+        ],
+      },
+    },
+    {
+      condition: {
+        display: 'Non-insulin-dependent diabetes mellitus without complications',
+        reference: 'Condition/d86942d0-bdc7-4444-8470-0836a112cfb6',
+      },
+      rank: 2,
+      use: {
+        coding: [
+          {
+            code: 'DD',
+            display: 'Discharge diagnosis',
+            system: 'http://terminology.hl7.org/CodeSystem/diagnosis-role',
+          },
+        ],
+      },
+    },
+  ],
+  hospitalization: {
+    dischargeDisposition: {
+      coding: [
+        {
+          code: 'home',
+          display: 'Home',
+          system: 'http://terminology.hl7.org/CodeSystem/discharge-disposition',
+        },
+      ],
+      text: 'Anjuran dokter untuk pulang dan kontrol kembali 1 bulan setelah minum obat',
+    },
+  },
+  id: 'cfd8a4d4-3998-484a-b669-efc275dac25b',
+  identifier: [
+    {
+      system: 'http://sys-ids.kemkes.go.id/encounter/36c416ae-6c05-4728-b30a-d23816a59ed0',
+      value: 'P20240001',
+    },
+  ],
+  location: [
+    {
+      location: {
+        display: 'Ruang 1A, Poliklinik Rawat Jalan',
+        reference: 'Location/ef011065-38c9-46f8-9c35-d1fe68966a3e',
+      },
+    },
+  ],
+  meta: {
+    lastUpdated: '2024-09-03T10:45:43.753287+00:00',
+    versionId: 'MTcyNTM2MDM0Mzc1MzI4NzAwMA',
+  },
+  participant: [
+    {
+      individual: {
+        display: 'Dokter Bronsig',
+        reference: 'Practitioner/N10000001',
+      },
+      type: [
+        {
+          coding: [
+            {
+              code: 'ATND',
+              display: 'attender',
+              system: 'http://terminology.hl7.org/CodeSystem/v3-ParticipationType',
+            },
+          ],
+        },
+      ],
+    },
+  ],
+  period: {
+    end: '2022-11-14T16:00:00+00:00',
+    start: '2022-11-14T14:00:00+00:00',
+  },
+  resourceType: 'Encounter',
+  serviceProvider: {
+    reference: 'Organization/36c416ae-6c05-4728-b30a-d23816a59ed0',
+  },
+  status: 'finished',
+  statusHistory: [
+    {
+      period: {
+        end: '2022-11-14T15:00:00+00:00',
+        start: '2022-11-14T14:00:00+00:00',
+      },
+      status: 'arrived',
+    },
+    {
+      period: {
+        end: '2022-11-14T16:00:00+00:00',
+        start: '2022-11-14T15:00:00+00:00',
+      },
+      status: 'in-progress',
+    },
+    {
+      period: {
+        end: '2022-11-14T16:00:00+00:00',
+        start: '2022-11-14T16:00:00+00:00',
+      },
+      status: 'finished',
+    },
+  ],
+  subject: {
+    display: 'Maestro Trastanechora',
+    reference: 'Patient/P02478375538',
+  },
+};

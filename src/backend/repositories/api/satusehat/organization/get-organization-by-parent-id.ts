@@ -1,5 +1,5 @@
 import fetch from '@/backend/repositories/api/lib/fetch';
-import getToken from '../authentication/get-token';
+import getToken from '../token/get-token';
 
 const URL = process.env.SATU_SEHAT_BASE_URL + '/Organization?partof=';
 

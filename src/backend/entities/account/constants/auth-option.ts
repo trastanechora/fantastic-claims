@@ -1,7 +1,8 @@
 import type { NextAuthOptions } from 'next-auth';
 import GoogleProvider from 'next-auth/providers/google';
-import type { User } from '../types/user';
+import type { User, UserType } from '../types/user';
 
+// TODO: move to DB later
 const users: User[] = [
   {
     email: 'trastanechora@gmail.com',
@@ -35,6 +36,19 @@ export const authOptions: NextAuthOptions = {
     strategy: 'jwt',
   },
   callbacks: {
+    async jwt({ token }) {
+      if (token.email) {
+        const email = token.email;
+        const userOnDb = await getUserByEmail(email);
+
+        token.type = userOnDb?.type || '';
+      }
+      return token;
+    },
+    session({ session, token }) {
+      session.user.type = token.type as UserType;
+      return session;
+    },
     async signIn({ user }) {
       if (!user.email) {
         return '/unauthorized';

@@ -1,4 +1,4 @@
-import fetch from '@/backend/repositories/api/lib/fetch';
+import fetch from '@/backend/repositories/lib/fetch';
 import getToken from '../token/get-token';
 import { MOCK_ENCOUNTER_ID } from './mock-data';
 

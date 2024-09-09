@@ -1,4 +1,4 @@
-import fetch from '@/backend/repositories/api/lib/fetch';
+import fetch from '@/backend/repositories/lib/fetch';
 
 const URL = process.env.OPENAI_BASE_URL + '/v1/chat/completions';
 

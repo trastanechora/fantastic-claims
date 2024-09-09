@@ -1,4 +1,4 @@
-import fetch from '@/backend/repositories/api/lib/fetch';
+import fetch from '@/backend/repositories/lib/fetch';
 import { EXAMPLE_NAME } from './mock-data';
 
 const URL = process.env.SNOMEDCT_BASE_URL + '/MAIN/concepts';

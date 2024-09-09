@@ -11,13 +11,6 @@ export interface UserSession extends User {
   [key: string]: unknown;
 }
 
-declare module 'next-auth' {
-  interface Session {
-    expires: string;
-    user: User;
-  }
-}
-
 const userFormName = ['password', 'email', 'general'] as const;
 export interface UserFormState {
   errors: Partial<Record<(typeof userFormName)[number], string>>;

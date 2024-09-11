@@ -1,4 +1,4 @@
-import fetch from '@/backend/repositories/api/lib/fetch';
+import fetch from '@/backend/repositories/lib/fetch';
 import type { AuthenticationResponseSuccess, AuthenticationResponseError } from './types';
 
 const URL = process.env.SATU_SEHAT_AUTH_URL + '/accesstoken?grant_type=client_credentials';

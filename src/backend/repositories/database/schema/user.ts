@@ -4,6 +4,7 @@ export const userTable = pgTable('user', {
   id: text('id').primaryKey(),
   email: text('email').unique(),
   passwordHash: text('password_hash'),
+  role: text('role', { enum: ['bpjs', 'hospital'] }),
 });
 
 export const sessionTable = pgTable('session', {

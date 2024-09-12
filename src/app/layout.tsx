@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
-import SessionProvider from '@/frontend/deliveries/view/auth-session-provider';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -17,9 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <SessionProvider>
-        <body className={inter.className}>{children}</body>
-      </SessionProvider>
+      <body className={`${inter.className} min-h-screen`}>{children}</body>
     </html>
   );
 }

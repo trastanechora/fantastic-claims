@@ -19,6 +19,7 @@ export const lucia = new Lucia(adapter, {
     return {
       // attributes has the type of DatabaseUserAttributes
       email: attributes.email,
+      role: attributes.role,
     };
   },
 });

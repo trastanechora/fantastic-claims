@@ -1,7 +1,7 @@
 import { GoogleUser } from '@/backend/entities/account/types/user';
 import { db } from '@/backend/repositories/database';
 import { authTable, userTable } from '@/backend/repositories/database/schema';
-import { createLuciaLoggedInSession, google, lucia } from '@/backend/repositories/lib/auth';
+import { createLuciaLoggedInSession, google } from '@/backend/repositories/lib/auth';
 import { AuthProviderId, ENTROPY_SIZE, GOOGLE_OAUTH_USER_INFO_URL } from '@/constants';
 import { generateIdFromEntropySize } from 'lucia';
 
@@ -71,7 +71,8 @@ export async function GET(request: Request) {
   } catch (err) {
     // error
     console.error(err);
+    redirect('/login');
   } finally {
-    redirect('/');
+    redirect('/onboarding');
   }
 }

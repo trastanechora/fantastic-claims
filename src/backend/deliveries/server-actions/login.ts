@@ -6,10 +6,9 @@ import { db } from '@/backend/repositories/database';
 import { createLuciaLoggedInSession } from '@/backend/repositories/lib/auth';
 import { ARGON_HASH_OPTION } from '@/constants';
 import { verify } from '@node-rs/argon2';
-import { cookies } from 'next/headers';
 import { redirect } from 'next/navigation';
 
-export const loginUsingEmail = async (
+export const loginUsingEmailAction = async (
   prev: UserFormState,
   formData: FormData,
 ): Promise<UserFormState> => {

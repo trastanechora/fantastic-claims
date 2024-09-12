@@ -10,7 +10,7 @@ import { hash } from '@node-rs/argon2';
 import { generateIdFromEntropySize } from 'lucia';
 import { redirect } from 'next/navigation';
 
-export const createUserWithEmail = async (
+export const createUserWithEmailAction = async (
   prev: UserFormState,
   formData: FormData,
 ): Promise<UserFormState> => {
@@ -67,5 +67,5 @@ export const createUserWithEmail = async (
   });
   // Set session to current user
   await createLuciaLoggedInSession(userId);
-  return redirect('/');
+  return redirect('/onboarding');
 };

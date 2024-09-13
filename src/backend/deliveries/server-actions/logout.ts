@@ -4,7 +4,7 @@ import { getUser, lucia } from '@/backend/repositories/lib/auth';
 import { cookies } from 'next/headers';
 import { redirect } from 'next/navigation';
 
-export const logout = async () => {
+export const logoutAction = async () => {
   const { session } = await getUser();
   if (!session) {
     return {

@@ -1,4 +1,4 @@
-import { logout } from '@/backend/deliveries/server-actions/logout';
+import { logoutAction } from '@/backend/deliveries/server-actions/logout';
 import { getUser } from '@/backend/repositories/lib/auth';
 import { Button } from '@/frontend/deliveries/components/ui/button';
 import Link from 'next/link';
@@ -17,7 +17,7 @@ export default async function Home() {
       )}
       <div className="flex gap-2">
         {!!user ? (
-          <form action={logout}>
+          <form action={logoutAction}>
             <Button type="submit">SIGN OUT</Button>
           </form>
         ) : (

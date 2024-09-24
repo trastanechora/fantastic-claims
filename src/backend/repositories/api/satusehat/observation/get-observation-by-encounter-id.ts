@@ -1,14 +1,13 @@
 import fetch from '@/backend/repositories/lib/fetch';
 import getToken from '../token/get-token';
-import { MOCK_LOCATION_ID } from './mock-data';
+import { MOCK_ENCOUNTER_ID } from '../encounter/mock-data';
 
-const URL = process.env.SATU_SEHAT_BASE_URL + '/Location/';
+const URL = process.env.SATU_SEHAT_BASE_URL + '/Observation?encounter=';
 
-const getLocationByParentId = async () => {
+const getObservationByEncounterId = async () => {
   const token = await getToken();
 
-  // TODO: remove mock data
-  const response = await fetch<any, any>(URL + MOCK_LOCATION_ID, {
+  const response = await fetch<any, any>(URL + MOCK_ENCOUNTER_ID, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json;charset=UTF-8',
@@ -19,4 +18,4 @@ const getLocationByParentId = async () => {
   return response;
 };
 
-export default getLocationByParentId;
+export default getObservationByEncounterId;

@@ -4,7 +4,7 @@ import { BODY_OF_CREATE_ENCOUNTER } from './mock-data';
 
 const URL = process.env.SATU_SEHAT_BASE_URL + '/Encounter';
 
-const createLocation = async (id: string) => {
+const createEncounter = async () => {
   const token = await getToken();
 
   const response = await fetch<any, any>(URL, {
@@ -19,4 +19,4 @@ const createLocation = async (id: string) => {
   return response;
 };
 
-export default createLocation;
+export default createEncounter;

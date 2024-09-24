@@ -1,3 +1,102 @@
+export const MOCK_CONDITION_ID = '12dc842f-74fd-42b9-a87e-10f4bb981e8c';
+
+export const BODY_OF_CREATE_CONDITION_1 = {
+  resourceType: 'Condition',
+  clinicalStatus: {
+    coding: [
+      {
+        system: 'http://terminology.hl7.org/CodeSystem/condition-clinical',
+        code: 'active',
+        display: 'Active',
+      },
+    ],
+  },
+  category: [
+    {
+      coding: [
+        {
+          system: 'http://terminology.hl7.org/CodeSystem/condition-category',
+          code: 'problem-list-item',
+          display: 'Problem List Item',
+        },
+      ],
+    },
+  ],
+  code: {
+    coding: [
+      {
+        system: 'http://snomed.info/sct',
+        code: '359746009',
+        display: "Patient's condition stable",
+      },
+    ],
+  },
+  subject: {
+    reference: 'Patient/{{patient_id}}',
+    display: '{{patient_name}}',
+  },
+  encounter: {
+    reference: 'Encounter/{{Encounter_uuid}}',
+    display: 'Kunjungan {{patient_name}} di tanggakl 14 Juli 2023',
+  },
+};
+
+export const BODY_OF_CREATE_CONDITION_2 = {
+  resourceType: 'Condition',
+  clinicalStatus: {
+    coding: [
+      {
+        system: 'http://terminology.hl7.org/CodeSystem/condition-clinical',
+        code: 'active',
+        display: 'Active',
+      },
+    ],
+  },
+  category: [
+    {
+      coding: [
+        {
+          system: 'http://terminology.hl7.org/CodeSystem/condition-category',
+          code: 'problem-list-item',
+          display: 'Problem List Item',
+        },
+      ],
+    },
+  ],
+  code: {
+    coding: [
+      {
+        system: 'http://snomed.info/sct',
+        code: '49727002',
+        display: 'Cough',
+      },
+    ],
+  },
+  onsetRange: {
+    low: {
+      value: 1,
+      unit: 'mo',
+      system: 'http://unitsofmeasure.org',
+      code: 'mo',
+    },
+    high: {
+      value: 239,
+      unit: 'mo',
+      system: 'http://unitsofmeasure.org',
+      code: 'mo',
+    },
+  },
+  recordedDate: '2022-06-14T08:45:00+07:00',
+  subject: {
+    reference: 'Patient/{{patient_id}}',
+    display: 'Maestro Trastanechora',
+  },
+  encounter: {
+    reference: 'Encounter/{{Encounter_uuid}}',
+    display: 'Kunjungan Maestro Trastanechora di tanggakl 14 Juli 2023',
+  },
+};
+
 export const RESPONSE_CREATE_CONDITION_1 = {
   category: [
     {

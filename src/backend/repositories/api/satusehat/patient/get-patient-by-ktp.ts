@@ -5,7 +5,8 @@ import { MOCK_PATIENT_KTP } from './mock-data';
 const URL =
   process.env.SATU_SEHAT_BASE_URL + '/Patient?identifier=https://fhir.kemkes.go.id/id/nik|';
 
-const getPatientByKTP = async (id: string) => {
+// TODO: remove mock data
+const getPatientByKTP = async () => {
   const token = await getToken();
 
   const response = await fetch<any, any>(URL + MOCK_PATIENT_KTP, {

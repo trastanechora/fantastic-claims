@@ -4,7 +4,8 @@ import { MOCK_ENCOUNTER_ID } from './mock-data';
 
 const URL = process.env.SATU_SEHAT_BASE_URL + '/Encounter/';
 
-const getEncounterById = async (id: string) => {
+// TODO: remove mock data
+const getEncounterById = async () => {
   const token = await getToken();
 
   const response = await fetch<any, any>(URL + MOCK_ENCOUNTER_ID, {

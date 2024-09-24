@@ -4,7 +4,8 @@ import { MOCK_PRACTITIONER_ID } from './mock-data';
 
 const URL = process.env.SATU_SEHAT_BASE_URL + '/Practitioner/';
 
-const getPractitionerById = async (id: string) => {
+// TODO: remove mock data
+const getPractitionerById = async () => {
   const token = await getToken();
 
   const response = await fetch<any, any>(URL + MOCK_PRACTITIONER_ID, {

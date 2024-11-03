@@ -1,10 +1,10 @@
 import fetch from '@/backend/repositories/lib/fetch';
 import getToken from '../token/get-token';
-import { BODY_OF_CREATE_LOCATION } from './mock-data';
+import { BODY_OF_CREATE_OBSERVATION } from './mock-data';
 
-const URL = process.env.SATU_SEHAT_BASE_URL + '/Location';
+const URL = process.env.SATU_SEHAT_BASE_URL + '/Observation';
 
-const createLocation = async () => {
+const createObservation = async () => {
   const token = await getToken();
 
   const response = await fetch<any, any>(URL, {
@@ -13,11 +13,10 @@ const createLocation = async () => {
       'Content-Type': 'application/json;charset=UTF-8',
       Authorization: `Bearer ${token}`,
     },
-    // TODO: remove mock data
-    body: JSON.stringify(BODY_OF_CREATE_LOCATION),
+    body: JSON.stringify(BODY_OF_CREATE_OBSERVATION),
   });
 
   return response;
 };
 
-export default createLocation;
+export default createObservation;

@@ -4,7 +4,8 @@ import { BODY_OF_CREATE_PATIENT } from './mock-data';
 
 const URL = process.env.SATU_SEHAT_BASE_URL + '/Patient';
 
-const createPatient = async (id: string) => {
+// TODO: remove mock data
+const createPatient = async () => {
   const token = await getToken();
 
   const response = await fetch<any, any>(URL, {
